@@ -1,0 +1,104 @@
+.label-box {
+    width: 100%;
+    min-width: 0;
+    background-color: rgb(214, 233, 252);
+    padding: 1.3em 4.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    flex: 1 1 4%;
+}
+
+.label-box:nth-of-type(1) {
+    border-top-left-radius: 6px;
+}
+
+.label-box p {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.label-form {
+    display: flex;
+    width: 100%;
+    flex: 4 1 100%;
+}
+
+.label-data {
+    background-color: rgb(236, 236, 236);
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid black;
+    flex: 1 1 10.5%;
+}
+
+.label-checkbox {
+    appearance: none;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 170, 170);
+}
+
+.label-checkbox:before {
+    content: "X";
+    position: absolute;
+    font-size: 1.2em;
+}
+
+.label-checkbox:checked:before {
+    content: "O";
+    position: absolute;
+    font-size: 1.2em;
+}
+
+.label-checkbox:checked {
+    background-color: rgb(97, 212, 97);
+}
+
+input.label-data {
+    font-size: 1em;
+    text-align: center;
+}
+
+input.label-data:focus {
+    outline: none;
+}
+
+.row {
+    flex-basis: 0;
+    min-width: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@media(max-width: 660px) {
+    .label-box {
+        font-size: .8em;
+        padding: 1em 2.2em;
+    }
+    .label-data {
+        font-size: .8em;
+    }
+}

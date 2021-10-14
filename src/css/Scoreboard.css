@@ -1,0 +1,70 @@
+#score-head {
+    font-family: 'Ubuntu', sans-serif;
+    margin: .5em;
+    margin-top: 1em;
+    font-size: 2.6em;
+    font-weight: 400;
+    color: #F7FFDD;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .6)
+}
+
+.score-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    /* background-color: #FDFFF8;
+    border: 2px solid #26547C;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, .3); */
+}
+
+.score-label {
+    font-size: 1.5em;
+    color: #EFD780;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    margin: 1em;
+}
+
+.score-label span {
+    color: #F7FFDD;
+    font-weight: 600;
+}
+
+.sub-head {
+    margin: 1em;
+}
+
+.score-button {
+    font-size: 1.4em;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    background-color: #FDFFF8;
+    border: 1px solid #26547C;
+    margin: 1em;
+    color: #26547C;
+    border-radius: 4px;
+    padding: .4em .8em;
+    box-shadow: 0px 4px 6px 0 rgba(0, 0, 0, .4);
+    transition: 150ms linear all;
+}
+
+.score-button:hover {
+    background-color: #ecf6ff;
+    box-shadow: 0px 6px 8px 2px rgba(0, 0, 0, .6);
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+@media (max-width: 660px) {
+    #score-head {
+        font-size: 2em;
+    }
+    .score-label {
+        font-size: 1.2em;
+    }
+    .score-bg {
+        width: 80%;
+    }
+}
