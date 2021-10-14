@@ -22,7 +22,7 @@ mongoose.connect(process.env.DB || process.env.MYDB, { useNewURLParser: true, us
 const User = require('./Models/user');
 
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, '../build')));
+app.use(express.static(path.join(__dirname, '../client/build')));
 
 const parseJSON = (bodyParser.json());
 const sessionOptions = {
