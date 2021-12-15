@@ -95,9 +95,10 @@ input[type=number] {
 
 @media(max-width: 660px) {
     .label-box {
-        font-size: .8em;
+        font-size: .6em;
         padding: 1em 2.2em;
     }
+
     .label-data {
         font-size: .8em;
     }

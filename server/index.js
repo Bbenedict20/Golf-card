@@ -48,7 +48,6 @@ app.post('/register', async (req, res) => {
     } else {
         res.send('username');
     }
-
 })
 app.post('/checklogin', async (req, res) => {
     const { user, pass } = req.body;

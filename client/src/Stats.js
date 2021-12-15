@@ -54,7 +54,9 @@ export default function Stats() {
         for (let a of arr) {
             num += parseInt(a);
         }
-        return (num / arr.length - 1);
+        num = (num / arr.length - 1);
+        if (num > 100) num = 100;
+        return num;
     }
     const checkNan = (num) => {
         if (!num) {

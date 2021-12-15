@@ -56,3 +56,9 @@
 .spin {
     transform: translateX(-2000px);
 }
+
+@media (max-width: 540px) {
+    .card-bg {
+        width: 95%;
+    }
+}
